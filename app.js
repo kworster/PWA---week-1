@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { doc, getDocs, addDoc, updateDoc, getFirestore, collection } from "firebase/firestore";
 
 const sw = new URL('service-worker.js', import.meta.url)
