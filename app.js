@@ -1,14 +1,24 @@
 import { initializeApp } from 'firebase/app';
 import { doc, getDocs, addDoc, updateDoc, getFirestore, collection } from "firebase/firestore";
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyD1zviWnLEQjBP0IJEtEr9gwEMvtaWlp4I",
+//   authDomain: "pwa-checklist-kw.firebaseapp.com",
+//   projectId: "pwa-checklist-kw",
+//   storageBucket: "pwa-checklist-kw.firebasestorage.app",
+//   messagingSenderId: "735597941676",
+//   appId: "1:735597941676:web:f1e8d9a2be1f1c13fde009"
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyD1zviWnLEQjBP0IJEtEr9gwEMvtaWlp4I",
-  authDomain: "pwa-checklist-kw.firebaseapp.com",
-  projectId: "pwa-checklist-kw",
-  storageBucket: "pwa-checklist-kw.firebasestorage.app",
-  messagingSenderId: "735597941676",
-  appId: "1:735597941676:web:f1e8d9a2be1f1c13fde009"
-};
+    apiKey: "AIzaSyD1zviWnLEQjBP0IJEtEr9gwEMvtaWlp4I",
+    authDomain: "pwa-checklist-kw.firebaseapp.com",
+    projectId: "pwa-checklist-kw",
+    storageBucket: "pwa-checklist-kw.firebasestorage.app",
+    messagingSenderId: "735597941676",
+    appId: "1:735597941676:web:f1e8d9a2be1f1c13fde009",
+    measurementId: "G-PMRS4D2XM8"
+  };
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
