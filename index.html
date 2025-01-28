@@ -7,7 +7,17 @@
     <title>Checklist App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico.ico">
 </head>
+<!-- Google tag (gtag.js) -->
+<script type="module" async src="https://www.googletagmanager.com/gtag/js?id=G-QLL1Z9B3N1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLL1Z9B3N1');
+</script>
 <body>
     <h1>My To-Do List</h1>
     <div class="container">
@@ -15,23 +25,6 @@
         <button id="addTaskBtn">Add Task</button>
         <ul id="taskList"></ul>
     </div>
-    <script src="app.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', {
-                scope: '/YOUR-REPOSITORY-NAME/'
-            })
-                .then(reg => console.log('Service Worker Registered'))
-                .catch(err => console.error('Service Worker Error:', err));
-        }
-    </script>
+    <script type="module" src="app.js"></script>
 </body>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-</script>
 </html>
